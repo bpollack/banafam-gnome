@@ -1,15 +1,11 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
-# image will be published to ghcr.io/<user>/<name>
 name: banafam-gnome
-# description will be included in the image's metadata
-description: A tweaked version of Bluefin Linux with 1Password, Ghostty, and Firefox
+description: A tweaked version of Bluefin Linux with 1Password and Ghostty
 
 base-image: ghcr.io/ublue-os/bluefin-dx
 image-version: stable
 
-# module configuration, executed in order
-# you can include multiple instances of the same module
 modules:
   - type: files
     files:
